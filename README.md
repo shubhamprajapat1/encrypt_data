@@ -1,8 +1,6 @@
-# EncryptData [![N|Solid](https://shubhamprajapat.herokuapp.com/assets/site-icon/favicon-32x32-ae92648776b6a7eb07d8a8fd866dcea4525f0a181fdb47a867926627d7667186.png)](https://nodesource.com/products/nsolid)
+# EncryptData [![N|Solid](https://shubhamprajapat.herokuapp.com/assets/site-icon/favicon-32x32-ae92648776b6a7eb07d8a8fd866dcea4525f0a181fdb47a867926627d7667186.png)](https://shubhamprajapat.herokuapp.com)
 
 String encryption is a popular subject in all programming languages. A simple algorithm in ruby for string encryption.
-
-TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
@@ -41,9 +39,9 @@ Or install it yourself as:
   encrypted_text = @encrypt.dump(text)
   # output >>  +PGqVe4Sakv6X7PfBgiv7n/tvqQm+AySRQTnC3f1K8A=\n
       
-      ## decryption
-      decrypted_text = @encrypt.load(encrypted_text)
-      # output >> 'I am ROR Developer.'
+  ## decryption
+  decrypted_text = @encrypt.load(encrypted_text)
+  # output >> 'I am ROR Developer.'
 ```
 
 
