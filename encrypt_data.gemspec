@@ -9,11 +9,11 @@ require 'openssl'
 Gem::Specification.new do |spec|
   spec.name          = "encrypt_data"
   spec.version       = EncryptData::VERSION
-  spec.authors       = ["Shubham"]
+  spec.authors       = ["Shubham Prajapat"]
   spec.email         = ["spkumar7786@gmail.com"]
 
   spec.summary       = 'Simple String encryption'
-  spec.description   = 'Simple String encryption'
+  spec.description   = 'String encryption is a popular subject in all programming languages. A simple algorithm in ruby for string encryption.'
   spec.homepage      = "https://github.com/shubhamprajapat1/encrypt_data"
   spec.license       = "MIT"
 

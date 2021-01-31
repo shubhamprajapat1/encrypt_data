@@ -1,6 +1,6 @@
-# EncryptData
+# EncryptData [![N|Solid](https://shubhamprajapat.herokuapp.com/assets/site-icon/favicon-32x32-ae92648776b6a7eb07d8a8fd866dcea4525f0a181fdb47a867926627d7667186.png)](https://nodesource.com/products/nsolid)
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/encrypt_data`. To experiment with that code, run `bin/console` for an interactive prompt.
+String encryption is a popular subject in all programming languages. A simple algorithm in ruby for string encryption.
 
 TODO: Delete this and the text above, and describe your gem
 
@@ -22,22 +22,37 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```sh
+  require 'encrypt_data'
+  
+    # simple text
+    key = "Simple Key"
+    # or hash format
+    key = "98dcb07e1c202bc6a4cbbcc6bf3c4acd"
+    @encrypt = EncryptData::Convert.new(key)
+    
+  # OR
+  
+    ENV['EncryptDataKey'] = 'PJqTYDe0Salp6X7PfBdgeiv7n'
+    @encrypt = EncryptData::Convert.new
+  
+  text = 'I am ROR Developer.'
+  ## encryption 
+  encrypted_text = @encrypt.dump(text)
+  # output >>  +PGqVe4Sakv6X7PfBgiv7n/tvqQm+AySRQTnC3f1K8A=\n
+      
+      ## decryption
+      decrypted_text = @encrypt.load(encrypted_text)
+      # output >> 'I am ROR Developer.'
+```
 
-## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/encrypt_data. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/shubhamprajapat1/encrypt_data. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
-## Code of Conduct
-
-Everyone interacting in the EncryptData project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/encrypt_data/blob/master/CODE_OF_CONDUCT.md).
