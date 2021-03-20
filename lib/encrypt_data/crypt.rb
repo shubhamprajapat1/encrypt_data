@@ -12,7 +12,8 @@ module EncryptData
       end
 
       def encryption_key
-        @key || ENV['EncryptDataKey']
+        @master_key = ENV['EncryptDataKey'].nil? ? EncryptData.configuration.master_key : ENV['EncryptDataKey']
+        @key || @master_key
       end
 
       ALGO = 'aes-256-cbc'.freeze

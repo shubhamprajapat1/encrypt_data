@@ -34,6 +34,14 @@ Or install it yourself as:
     ENV['EncryptDataKey'] = 'PJqTYDe0Salp6X7PfBdgeiv7n'
     @encrypt = EncryptData::Convert.new
   
+  # OR 
+    # encrypt_data version 0.1.1
+    EncryptData.configure do |config|
+      config.master_key = 'PJqTYDe0Salp6X7PfBdgeiv7n'
+    end
+  
+  # ----------------------
+
   text = 'I am ROR Developer.'
   ## encryption 
   encrypted_text = @encrypt.dump(text)

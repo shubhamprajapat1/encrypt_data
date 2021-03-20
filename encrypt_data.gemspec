@@ -3,6 +3,7 @@ lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "encrypt_data/version"
 require "encrypt_data/crypt"
+require "encrypt_data/configuration"
 require 'base64'
 require 'openssl'
 
@@ -32,7 +33,8 @@ Gem::Specification.new do |spec|
   spec.files         = [
     "lib/encrypt_data.rb",
     "lib/encrypt_data/version.rb",
-    "lib/encrypt_data/crypt.rb"
+    "lib/encrypt_data/crypt.rb",
+    "lib/encrypt_data/configuration.rb"
   ]
 
   spec.bindir        = "exe"
